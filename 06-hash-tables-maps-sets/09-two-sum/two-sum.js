@@ -4,7 +4,7 @@ function twoSum(numArr,target) {
     const complement=target-numArr[i]
   if(numMap.has(complement)){
   return [numArr.indexOf(complement),i]
-  }
+  } 
   numMap.add(numArr[i])
   }
   return[]
