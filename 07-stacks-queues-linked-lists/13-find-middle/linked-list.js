@@ -1,4 +1,4 @@
-// Node class
+ // Node class
 class Node {
   constructor(data) {
     // The data the node holds.
