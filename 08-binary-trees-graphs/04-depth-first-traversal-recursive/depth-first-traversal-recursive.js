@@ -1,6 +1,11 @@
-class Node {}
+class Node {
+  constructor(value){
+    this.val=value
+    
+  }
+}
 
-function recDepthFirstTraversal() {}
+function recDepthFirstTraversal(root) {}
 
 module.exports = {
   Node,

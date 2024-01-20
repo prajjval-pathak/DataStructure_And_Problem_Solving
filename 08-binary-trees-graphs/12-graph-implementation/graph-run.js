@@ -12,5 +12,8 @@ g.addVertex('Aspen');
 g.addEdge('Tokyo', 'Dallas');
 g.addEdge('Dallas', 'Aspen');
 g.addEdge('Aspen', 'Tokyo');
-
-console.log(g);
+g.print()
+// g.removeEdge('Tokyo', 'Dallas')
+// g.print()
+g.removeVertex('Tokyo')
+g.print()
