@@ -29,6 +29,6 @@ graph.addEdge('C', 'E');
 graph.addEdge('D', 'F');
 graph.addEdge('E', 'F');
 
-graph.printAdjacencyList();
+// graph.printAdjacencyList();
 
 console.log(depthFirstTraversal(graph, 'A'));

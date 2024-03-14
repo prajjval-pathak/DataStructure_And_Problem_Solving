@@ -1,23 +1,25 @@
 const Stack = require('./stack');
 
 function depthFirstTraversal(graph,start) {
-  if (!graph.adjacencyList[start]) {
-    return [];
+  if(!graph.adjacencyList[start]){
+    return  []
   }
   const res=[]
   const stack=[]
-  const visited={}
   stack.push(start)
-  visited[start]=true
-  while(stack.length>0){
-    const currentVertex=stack.pop()
-    res.push(currentVertex)
-    graph.adjacencyList[currentVertex].forEach((item)=>{if(!visited[item]){
-        stack.push(item)
-        visited[item]=true
-  }})
-  }
-  return res
+  const visited={}
+  visited[start]=1
+  while(stack.length>=1){
+    const ele=stack.pop()
+    res.push(ele)
+     for(let node of graph.adjacencyList[ele]){
+        if(!visited.hasOwnProperty(node)){
+          visited[node]=1
+          stack.push(node)
+        }
+     }
+    }
+    return res
 }
 
 module.exports = depthFirstTraversal;
