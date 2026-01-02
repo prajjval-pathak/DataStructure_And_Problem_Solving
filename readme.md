@@ -1,3 +1,2 @@
-# Problem Solving Practice
-
-This is the repo i created to Keep track of JS challenges i am solving Topic wise
+This repository tracks my problem-solving practice in JavaScript, organized by topic. I  had transitioned to LeetCode to work on a wider range of problems.
+Leetcode Profile : https://leetcode.com/u/prajjvalpathak/
